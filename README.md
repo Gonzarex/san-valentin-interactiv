@@ -9,18 +9,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
+            height: 100vh;
             font-family: Arial, sans-serif;
             background-color: pink;
         }
-        h1 {
-            color: red;
-        }
-        .buttons {
-            position: relative;
-            margin-top: 20px;
-        }
+        h1 { color: red; }
         button {
             font-size: 20px;
             padding: 10px;
@@ -34,22 +28,8 @@
 </head>
 <body>
     <h1>¿Quieres ser mi San Valentín? ❤️</h1>
-    <div class="buttons">
-        <button id="yes">Sí 💖</button>
-        <button id="no">No 💔</button>
-    </div>
+    <button id="yes">Sí 💖</button>
+    <button id="no">No 💔</button>
 
     <script>
-        document.getElementById("yes").addEventListener("click", function() {
-            alert("¡Yay! 💕 Nos vemos el 14 de febrero! 🎉");
-        });
-
-        document.getElementById("no").addEventListener("mouseover", function() {
-            let x = Math.random() * window.innerWidth - 100;
-            let y = Math.random() * window.innerHeight - 50;
-            this.style.left = `${x}px`;
-            this.style.top = `${y}px`;
-        });
-    </script>
-</body>
-</html>
+        document.getElementById("yes").addEventListener("click", fu
